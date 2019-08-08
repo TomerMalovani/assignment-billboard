@@ -1,0 +1,40 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'billboard/css/login.css' %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="form">
+
+            <form method="post" action="{% url 'login' %}">
+                <h2>Billboard</h2>
+                {% csrf_token %}
+
+
+                {{ form.username.label_tag }}
+                {{ form.username }}
+
+                {{ form.password.label_tag }}
+                {{ form.password }}
+                {% if form.errors %}
+                <p>Username and password didn't match. Please try again.</p>
+                {% endif %}
+                <button class="btn btn-success" type="submit" value="login">login</button>
+                <input type="hidden" name="next" value="/billboard/" />
+                <p class="message">Not registered? <a href="/billboard/register">Create an account</a></p>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

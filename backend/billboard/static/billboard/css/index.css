@@ -1,0 +1,85 @@
+
+.name-header{
+    width: 10%;
+}
+
+.wrap{
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+    
+}
+
+.header-logo{
+    height: 30%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.biilboard-logo{
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+}
+
+.post-field {
+   width: 800px;
+    border: solid 3px #00b7ef;
+    margin-bottom: 5px;
+}
+
+.post-legend{
+    font-family: 'Poiret One', cursive;
+    font-size: 16px;
+
+}
+
+.post-infield{
+    padding: 10px;
+}
+
+.post-header{
+        font-family: 'Anton', sans-serif;
+        color: #00b7ef;
+        font-size: 30px;
+        display: flex;
+        
+}
+
+.post-content{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#c1bfc0;
+    font-size: 16px;
+}
+
+.addPost{
+    height: auto;
+    width:800px;
+    border: dashed 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.addPost-btn{
+    height: 50px;
+    width: 75px;
+    background-color: #66cdaa;
+    border-radius: 3px;
+}
+
+.spaceFor-posts{
+    height: auto;
+}
+
+.postInputHeader{
+    height: 30px;
+    width: 45%;
+    margin: 10px;
+}
+
+.postInputContent{
+    height: 200px;
+    width: 700px;
+}
